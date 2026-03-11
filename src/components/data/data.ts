@@ -28,7 +28,7 @@ export interface SocialLinks {
   github: string;
   linkedin: string;
   email: string;
-  [key: string]: string; // Para agregar otras redes opcionalmente
+  [key: string]: string;
 }
 
 export interface PersonalInfo {

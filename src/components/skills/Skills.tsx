@@ -15,7 +15,7 @@ const Skills: React.FC = () => {
           <ServicesContainer
             title={'Website Development'}
             body={
-              'I build modern, responsive, and user-friendly Ibsites using the latest technologies.'
+              'I build modern, responsive, and user-friendly websites using the latest technologies.'
             }
           ></ServicesContainer>
           <ServicesContainer
