@@ -17,7 +17,7 @@ export default function GitHubStats() {
     repos: 0,
     stars: 0,
     forks: 0,
-    commits: '1500+', // Ejemplo: ponlo fijo o calcula real
+    commits: '500+', // Ejemplo: ponlo fijo o calcula real
   });
 
   useEffect(() => {
@@ -32,18 +32,18 @@ export default function GitHubStats() {
       console.log(reposData);
       const stars = reposData.reduce(
         (acc: number, repo: any) => acc + repo.stargazers_count,
-        0
+        0,
       );
       const forks = reposData.reduce(
         (acc: number, repo: any) => acc + repo.forks_count,
-        0
+        0,
       );
 
       setStats({
         repos: userData.public_repos,
         stars,
         forks,
-        commits: '1500+',
+        commits: '500+',
       });
     };
 

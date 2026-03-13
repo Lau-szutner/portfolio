@@ -10,7 +10,8 @@ import razer from '../../assets/projects/razer.png';
 import todoListVue from '../../assets/projects/todoListVue.png';
 import alejandraQueiruga from '../../assets/projects/alejandraQueiruga.png';
 import ticTacToe from '../../assets/projects/ticTacToe.png';
-
+import clauty from '../../assets/projects/clauty.png';
+import csegPortfolio from '../../assets/projects/cseg-portfolio.png';
 type NavLink = {
   label: string;
   id: string;
@@ -123,6 +124,37 @@ export const projects: ProjectProps[] = [
     ],
     webUrl: 'https://github.com/Lau-szutner/Money-Mind',
     githubUrl: 'https://github.com/Lau-szutner/Money-Mind',
+  },
+  {
+    title: 'Clauty',
+    image: clauty,
+    body: 'Clauty is an e-learning platform developed as a university project. It leverages the Laravel framework to provide efficient educational management, focusing on a structured and intuitive learning experience.',
+    skills: [
+      { iconName: 'php', label: 'PHP' },
+      { iconName: 'Laravel', label: 'Laravel' },
+      { iconName: 'git', label: 'GIT' },
+      { iconName: 'tailwind', label: 'TAILWIND' },
+      { iconName: 'html', label: 'HTML' },
+      { iconName: 'css', label: 'CSS' },
+    ],
+    webUrl: 'https://clauty.onrender.com/',
+    githubUrl: 'https://github.com/Lau-szutner/Clauty',
+  },
+  {
+    title: 'Cseg portfolio',
+    image: csegPortfolio,
+    body: 'This project is a portfolio website for Catalina Lara Segalini (CSEG), a talented video editor and photographer. The portfolio showcases her work, highlighting her skills in video editing and photography through a sleek and modern interface.',
+    skills: [
+      { iconName: 'react', label: 'REACT' },
+      { iconName: 'typescript', label: 'TYPESCRIPT' },
+      { iconName: 'nextjs', label: 'NEXTJS' },
+      { iconName: 'tailwind', label: 'TAILWIND' },
+      { iconName: 'html', label: 'HTML' },
+      { iconName: 'css', label: 'CSS' },
+      { iconName: 'javascript', label: 'JAVASCRIPT' },
+    ],
+    webUrl: 'https://cseg-portfolio.vercel.app/',
+    githubUrl: 'https://github.com/Lau-szutner/Cseg-portofolio',
   },
   {
     title: 'Portfolio Alejandra Queiruga',
