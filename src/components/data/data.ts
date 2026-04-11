@@ -82,6 +82,7 @@ export const portfolioData: PortfolioData = {
       linkedin:
         'https://www.linkedin.com/in/lautaro-fernandez-szutner-203639277/?original_referer=https%3A%2F%2Far%2Elinkedin%2Ecom%2Fpub%2Fdir%2FLautaro%2FFernandez%2Far-0-Argentina&originalSubdomain=ar',
       email: 'mailto:lautaroszutner@gmail.com',
+      behance: 'https://www.behance.net/lautarofernand',
     },
   },
 

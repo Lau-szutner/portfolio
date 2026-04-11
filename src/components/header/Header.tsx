@@ -3,27 +3,28 @@ import Tilt from 'react-parallax-tilt';
 import { useState, useEffect } from 'react';
 import { portfolioData } from '../data/data.ts';
 
-const INITIAL_SCALE_PHOTO = 1
+const INITIAL_SCALE_PHOTO = 1;
 const LARGE_SCREEN_WIDTH = 1500;
 const SCALE_LARGE_SCREEN = 1.5;
 const SCALE_SMALL_SCREEN = 1.3;
 
-const { name, title, profileImage } = portfolioData.personalInfo
-const { github, linkedin, email} = portfolioData.personalInfo.socialLinks 
+const { name, title, profileImage } = portfolioData.personalInfo;
+const { github, linkedin, email, behance } =
+  portfolioData.personalInfo.socialLinks;
 
 function Header() {
-  const [scalePhoto, setScalePhoto] = useState(INITIAL_SCALE_PHOTO); 
+  const [scalePhoto, setScalePhoto] = useState(INITIAL_SCALE_PHOTO);
 
   useEffect(() => {
-    const handlePhotoResize = () => { 
-      if (window.innerWidth > LARGE_SCREEN_WIDTH) { 
-        setScalePhoto(SCALE_LARGE_SCREEN); 
+    const handlePhotoResize = () => {
+      if (window.innerWidth > LARGE_SCREEN_WIDTH) {
+        setScalePhoto(SCALE_LARGE_SCREEN);
       } else {
-        setScalePhoto(SCALE_SMALL_SCREEN); 
+        setScalePhoto(SCALE_SMALL_SCREEN);
       }
     };
 
-    handlePhotoResize(); 
+    handlePhotoResize();
     window.addEventListener('resize', handlePhotoResize);
     return () => window.removeEventListener('resize', handlePhotoResize);
   }, []);
@@ -53,6 +54,7 @@ function Header() {
             <Button link={github}>Github</Button>
             <Button link={linkedin}>Linkedin</Button>
             <Button link={email}>Email</Button>
+            <Button link={behance}>Behance</Button>
           </div>
         </div>
 
